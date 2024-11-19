@@ -1,0 +1,279 @@
+:root{
+    --dark:#191919;
+    --black:#000000;
+    --aqua:#118DA8;
+    --white:#ffff;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1440px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.dark{
+    background-color: var(--dark);
+    height: 240vw;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header__logo{
+    color: var(--white);
+    font-size: 33px;
+    font-weight: 900px; 
+}
+
+.nav__links{
+    display: flex;
+    gap: 34px;
+    font-size: 17px;
+    font-weight: 400px;
+}
+.nav__link{
+    color: var(--white);
+    position: relative;
+}
+
+.nav__link:hover{
+    color: var(--aqua);
+    background: var(--dark);
+    transition: 0.3s;
+    transition: 0.5s all;
+}
+
+
+.nav__link::after{
+    content: '';
+    height: 1px;
+    width: 0;
+    background: var(--aqua);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+    transition: 0.5s all;
+}
+
+.nav__link:hover::after{
+    width: 100%;
+}
+
+.nav__link.active{
+     color: var(--aqua);
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.main__title{
+    font-weight: 400px;
+    font-size: 70px;
+    line-height: 88px;
+}
+
+.main__text{
+    color: #fff;
+}
+
+.main__cover{
+    padding-top: 40px;
+}
+
+.listen__photo{
+    display: flex;
+    gap: 20px;
+}
+
+.episodes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.episodes p{
+    color: var(--white);
+    font-weight: 400px;
+    font-size: 64px;
+}
+
+.episodes button{
+    color: var(--white);
+    background: var(--aqua);
+    border: none;
+    padding: 15px 24px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400px;
+}
+
+.gears{
+    display: flex;
+    justify-content: space-between;
+    background: var(--black);
+    border-radius: 32px;
+}
+
+.flex{
+    display: flex;
+}
+
+.gear__img{
+    padding: 40px;
+}
+
+.gear__text{
+    margin-left: 20px;
+}
+
+.gear__p__text{
+    color: var(--white);
+    background: var(--dark);
+    border-radius: 5px;
+    width: 55px;
+    font-size: 21px;
+    padding: 3 50px;
+    margin-top: 45px;
+    
+}
+
+.text__aqua{
+    color: var(--aqua);
+    margin-top: 50px;
+    font-size: 17px;
+    font-weight: 400px;
+}
+.tema__white{
+    color: var(--white);
+    font-weight: 400px;
+    font-size: 64px;
+    margin-top: -0px;
+}
+
+.text__text{
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 400px;
+    margin-top: -40px;
+}
+
+.view__1{
+    color: var(--white);
+    background: var(--aqua);
+    border: none;
+    padding: 15px 24px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400px;
+}
+
+.tips__tricks{
+    display: flex;
+    justify-content: space-between;
+    background: var(--black);
+    border-radius: 32px;
+    margin-top: 55px;
+}
+
+.gears__1{
+    display: flex;
+    justify-content: space-between;
+    background: var(--black);
+    border-radius: 32px;
+    margin-top: 55px;
+}
+
+.jacobs__section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -1400px;
+}
+
+.meet{
+    color: var(--aqua);
+    font-weight: 400px;
+    font-size: 18px;
+}
+
+.jacobs__h1{
+    color: var(--white);
+    font-weight: 400px;
+    font-size: 65px;
+    margin-top: 10px;
+}
+.jacobs__decs{
+    color: var(--white);
+    font-weight: 400px;
+    font-size: 22px;
+}
+.jacobs__decs__1{
+    color: var(--white);
+    font-weight: 400px;
+    font-size: 22px;
+}
+.jacobs__photo{
+    margin-right: 25px;
+}
+
+.email{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    border-radius: 32px;
+    height: 400px;
+    
+}
+.subscribe{
+    padding-top: 85px;
+    padding-left: 60px;
+    padding-bottom: 145px;
+
+    & p{
+        color: var(--aqua);
+        font-size: 18px;
+        font-weight: 400px;
+    }
+    & h1{
+        color: var(--white);
+        font-size: 72px;
+        font-weight: 400px;
+    }
+}
+.name__email{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 260px;
+    gap: 20px;
+}
+
+.name__text{
+    background: var(--dark);
+    padding: 20px 120px;
+}
+
+.name__email__email{
+    background: var(--dark);
+    padding: 20px 120px;
+}
+
+
